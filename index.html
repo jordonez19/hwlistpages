@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de paginas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #111;
+        }
+        h1{
+            color: #fff;
+            font-size: 2.5em;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            text-transform: uppercase;
+        }
+
+        li {
+            margin: 10px 0;
+            margin-bottom: 25px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #e6e6e6;
+            border: 2px solid #e6e6e6;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            letter-spacing: 2px;
+        }
+
+        a:hover {
+            background-color: #e6e6e6;
+            color: #111;
+        }
+
+        .pulse:hover {
+            -webkit-animation-name: pulse;
+            animation-name: pulse;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes pulse {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05);
+            }
+
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05);
+            }
+
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Listado de paginas</h1>
+    <ul>
+        <li class="pulse"><a href="./CV_template/index.html">pagina cv-template</a></li>
+        <li class="pulse"><a href="./Coffee-Shop/index.html">pagina coffe shop</a></li>
+        <li class="pulse"><a href="./recreandoHtmlCss/index.html">pagina freelancer</a></li>
+        <li class="pulse"><a href="./testTemplateTiendaVirtual/">pagina tienda virtual</a></li>
+    </ul>
+</body>
+
+</html>
